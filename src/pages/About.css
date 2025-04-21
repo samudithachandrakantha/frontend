@@ -1,0 +1,30 @@
+/* ... existing styles ... */
+/* Enhanced Stats Animation */
+.stat-number {
+    animation: countUpAndScale 1.5s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  @keyframes countUpAndScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /* Stats card hover effect */
+  .stats-card {
+    transition: all 0.3s ease;
+  }
+  .stats-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 30px -15px rgba(0, 0, 0, 0.2);
+  }
+ 
